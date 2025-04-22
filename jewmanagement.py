@@ -10,7 +10,7 @@ class JewelryItem:
     def display(self):
         print(f"ID: {self.item_id}, Name: {self.name}, Type: {self.type}, "
               f"Weight: {self.weight}g, Price: ${self.price}, Stock: {self.stock}")
-
+# this to create a object using it
 class JewelryShop:
     def __init__(self):
         self.inventory = []
@@ -25,7 +25,7 @@ class JewelryShop:
         item = JewelryItem(item_id, name, type_, weight, price, stock)
         self.inventory.append(item)
         print("Item added successfully!\n")
-
+# tis is to view jewls
     def view_items(self):
         if not self.inventory:
             print("No items in inventory.")
